@@ -193,6 +193,10 @@ body {
     display: inline-block;
 }
 
+.site-header--filter-bar .tag:hover {
+    background-color: #DEEBFF
+}
+
 .site-header--filter-bar .tag span {
     font-weight: 700;
     font-size: 17px;
@@ -283,12 +287,17 @@ body {
     gap: 8px;
 }
 
-.site-content--card-info h3 {
+.site-content--card-info h3  {
     height: 19px;
     margin: 0;
     font-weight: 700;
     font-size: 16px;
     line-height: 18.78px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.site-content--card-info a {
+    text-decoration: none;
     color: rgba(0, 0, 0, 1);
 }
 
@@ -313,8 +322,6 @@ body {
     line-height: 21.13px;
     color: rgba(0, 0, 0, 1);
 }
-
-
 
 .site-content--offers-sponsored {
     display: flex;
@@ -485,10 +492,11 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 18.78px;
-    color: rgba(0, 0, 0, 1)
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
 }
 
-.site-footer{
+.site-footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
