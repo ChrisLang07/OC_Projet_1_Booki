@@ -8,7 +8,7 @@ body {
     padding:0;
 }
 
-.container{
+.container {
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
@@ -41,7 +41,7 @@ body {
 
 .site-header--list li {
     display: inline-block;
-    margin-left: 15px;
+    margin-left: 68px;
 }
 
 .site-header--list li a {
@@ -551,7 +551,7 @@ body {
 
 
     .container{
-        padding: 30px;
+        padding: 0 30px;
     }
 
     .site-content--group{
@@ -562,9 +562,6 @@ body {
         width: 100%;
     }
     
-
-
-
 }
 
 
@@ -639,9 +636,7 @@ body {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
-   
-    
-    .site-header--filter-bar {
+   .site-header--filter-bar {
         display: flex;
         flex-direction: column;
         width: 100%;
