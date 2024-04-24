@@ -158,6 +158,10 @@ body {
     padding:0 15px;
 }
 
+.fa-magnifying-glass {
+    visibility: hidden;
+}
+
 
 .site-header--filter-bar {
     width: 100%;
@@ -526,12 +530,9 @@ body {
 
 @media only screen and (max-width: 1440px) {
 
+
     .container{
         padding: 30px;
-    }
-
-    .fa-magnifying-glass {
-        display: none;
     }
 
     .site-content--group{
@@ -550,9 +551,7 @@ body {
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
     
-    .fa-magnifying-glass {
-        display: none;
-    }
+   
     
     .site-content--offers-sponsored {
         margin-top: 50px;
@@ -621,9 +620,7 @@ body {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
-    .fa-magnifying-glass {
-        display: none;
-    }
+   
     
     .site-header--filter-bar {
         display: flex;
@@ -642,7 +639,6 @@ body {
         
     }
     
-
     .site-content--offers-sponsored {
         margin-top: 50px;
         height: 252px;
@@ -757,8 +753,8 @@ body {
 
     .site-header--finder {
         width: 15%;
-        text-align: center;
         border-radius: 15px 16px;
+        text-align: center;
     }
 
     .site-header--button {
@@ -766,13 +762,10 @@ body {
     }
 
     .fa-magnifying-glass {
-        color: #FFFFFF;
-        width: 17px;
-        height: 17px;
-        margin-top: 15px;;
-        
+        visibility: visible;
+        color:#FFFFFF;
+        margin: 15px auto;
     }
-
 
     .site-header--filter-bar .filter {
         margin-bottom: 20px;
