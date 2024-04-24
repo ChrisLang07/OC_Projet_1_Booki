@@ -225,6 +225,25 @@ body {
     color: #0065FC;
 }
 
+.site-header--info-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-color: #FFF;
+    border-radius: 50px;
+    border: 1px solid #D9D9D9;
+    text-align: center;
+}
+
+.site-header--icon {
+    color:#0065FC;
+    font-weight:600;
+    font-size: small;
+    font-family: 'Roboto Mono';
+}
+
 .site-content--group {
     display: flex;
     justify-content: space-between;
