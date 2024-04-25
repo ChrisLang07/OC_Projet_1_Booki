@@ -60,6 +60,7 @@ body {
 }
 
 .site-header--info-group {
+    height: 15%;
     display: flex;
     flex-direction: column;
     gap: 35px;
@@ -246,6 +247,7 @@ body {
 }
 
 .site-content--group {
+    height: 40%;
     display: flex;
     justify-content: space-between;
     gap:30px;
@@ -450,19 +452,20 @@ body {
     line-height: 16.44px;
 }
 
-.site-content--activity {
+/*.site-content--activity {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 559.02px;
+    height: 30%
     margin: auto;
     padding: 30px;
     gap: 30px;
-}
+}*/
 
 .site-content--activity-title {
     width: 100%;
+    height: 20%;
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
@@ -471,24 +474,24 @@ body {
 }
 
 .site-content--activity-frame {
+    height: 439px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 439px;
     gap: 30px;
     margin:0 30px 60px 30px;
 }
 
 .site-content-card {
     width: 25%;
-    height: 439px;
+    height: 100%;
     border-radius: 20px;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
 }
 
 .site-content--activity-pic {
     width: 100%;
-    height: 380px;
+    height: 85%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
@@ -498,7 +501,6 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    width: 297.5px;
     height: 59px;
     padding: 20px 19px 20px 19px;
     border-radius: 0 0 20px 20px;
@@ -508,8 +510,6 @@ body {
 }
 
 .site-content--activity-place {
-    width: 259.5px;
-    height: 19px;
     margin: 0;
     font-weight: 700;
     font-size: 16px;
@@ -520,6 +520,7 @@ body {
 
 .site-footer {
     width: 100%;
+    height: 10%;
     display: flex;
     justify-content: space-between;
     background-color: #F2F2F2;
@@ -546,7 +547,7 @@ body {
     line-height: 19px;
 }
 
-
+/* for large desktop screen */
 
 @media only screen and (max-width: 1440px) {
 
@@ -565,13 +566,14 @@ body {
     
 }
 
+/* For desktop screen */ 
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
     
    
     
     .site-content--offers-sponsored {
-        margin-top: 50px;
+        margin: 50px 0;
         height: 252px;
         gap: 20px;
     }
@@ -609,8 +611,17 @@ body {
         width: 100%;
     }
 
+     
+    .site-content-card {
+        height: 70%;
+    }
+
+    .site-content--activity-pic {
+        height: 75%;
+    }
+
     .site-content--activity-title {
-        margin: 0 0 30px 0;
+        margin: 0;
     }
 
     .site-content--activity-frame {
@@ -634,6 +645,8 @@ body {
     }
 
 }
+
+/* For tablet screen */
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
@@ -693,24 +706,20 @@ body {
         width: 100%;
     }
 
+    .site-content--col-activity {
+        height: 390px;
+    }
+
     .site-content--activity-title {
-        margin: 0 0 30px 0;
+        margin-bottom: 30px;
     }
 
     .site-content--activity-frame {
-        margin: auto;
+        height: 75%;
     }
 
     .site-content-card {
-        width: 25%;
-    }
-
-    .site-content--activity-legend {
-        width: 100%;
-    }
-
-    .site-content--activity-legend a {
-        width: 100%;
+        height: 100%;
     }
 
     .site-footer {
@@ -719,17 +728,19 @@ body {
 
 }
 
-    
+    /* For  smartphone screen */
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
 
     .container {
-        min-width: 320px;
-        padding: 20px;
+        width: 100%;
+        padding:0;
+        margin: auto;
     }
     
     .site-header--top-bar {
         width: 100%;
+        padding: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -760,6 +771,11 @@ body {
     .site-header--list li a:hover {
         border-bottom: 2px solid #0065FC;
         border-top: 2px solid transparent;
+    }
+
+    .site-header--info-group {
+        height: 10%;
+        padding: 20px;
     }
 
     .site-header--search-bar {
@@ -802,7 +818,7 @@ body {
 
     .site-header--filter-tag .tag {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         height: 50px;
         padding: 4px 19px;
@@ -813,22 +829,48 @@ body {
     .site-header--text-eco, .site-header--text-family, 
     .site-header--text-romantic, .site-header--text-nuggets {
         font-size: 14px;
+        
     }
 
     .site-content--group {
+        height: 50%;
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
     }
 
     .site-content--offers-sponsored {
-        height: 569px;
+        width: 100%;
+        height: 30%;
+        padding: 30px 20px;
         display: block;
     }
 
+    .site-content--sponsored-title {
+        margin: 30px 10px;
+    }
+
+    .fa-chart-line {
+        padding-right: 10px;
+    }
+
+    .site-content--col-card-info {
+        width: 66.66%;
+    }
+
+    .site-content--col-picture {
+        width: 33.33%;
+    }
+
+    .site-content--col-card-two {
+        width: 100%;
+    }
+
     .site-content--offers-main {
-        height: 1436px;
+        height: 70%;
+        padding: 20px;
         display: block;
+        background-color: #FFFFFF;
     }
 
     .site-content--row-title {
@@ -839,29 +881,51 @@ body {
         display: block;
     }
 
+    .site-content--card {
+        margin-bottom: 15px;;
+    }
+
     .site-content--display-more {
         margin-top: 15px;
     }
 
-  
+    .site-content--col-activity {
+        padding: 20px;
+        height: 25%;
+    }
+
+    .site-content--activity-title {
+        margin: 30px 0;
+    }
 
     .site-content--activity-frame {
-        display: block;
+        width: 100%;
         height: 845px;
+        display: block;
+        margin: auto;
+        
     }
 
     .site-content-card {
         width: 100%;
-        height: 200px;
-        margin-bottom: 20px;;
-   }
+        height: 25%;
+        margin-bottom: 15px;
+    }
 
    .site-content--activity-pic {
-    height: 141px;
+        height: 70%;
    }
-    
-    .site-footer {
-        height: 461px;
+
+   .site-content--activity-legend {
+        display: block;
+        height: 30%;
+        padding: 10px;
+        
+    }
+
+   .site-footer {
+        height: 15%;
+        margin-top: 50px;
         padding: 30px;
         display: flex;
         flex-direction: column;
