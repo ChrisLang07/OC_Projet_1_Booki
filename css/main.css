@@ -5,7 +5,7 @@
 
 body {
     margin:0;
-    padding:0;
+    padding:0 30px;;
 }
 
 .container {
@@ -80,6 +80,14 @@ body {
     font-size: 22px;
     line-height: 25.83px;
     color: rgba(0, 0, 0, 1)
+}
+
+.site-header--headline-comment {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.78px;
+    text-align: left;
+
 }
 
 .site-header--headline h2 {
@@ -247,7 +255,6 @@ body {
 }
 
 .site-content--group {
-    height: 40%;
     display: flex;
     justify-content: space-between;
     gap:30px;
@@ -257,10 +264,9 @@ body {
 .site-content--offers-main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     width: 70%;
-    height: 614px;
     padding: 30px;
     border-radius: 15px;
     gap: 30px;
@@ -288,7 +294,6 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 4px;
     padding: 0 0 15px 0;
     border-radius: 20px;
@@ -305,28 +310,24 @@ body {
 }
 
 .site-content--card-info {
-    display: flex;
-    flex-direction: column;
-    padding: 0 15px 0 15px;
-    gap: 8px;
+    display: block;
+    padding: 0 15px;
 }
 
-.site-content--card-info h3  {
-    height: 19px;
-    margin: 0;
+.site-content--card-info a  {
+    display:block;
+    margin: 10px 0;
     font-weight: 700;
     font-size: 16px;
     line-height: 18.78px;
-    color: rgba(0, 0, 0, 1);
-}
-
-.site-content--card-info a {
     text-decoration: none;
     color: rgba(0, 0, 0, 1);
 }
 
 .site-content--card-info span {
+    display:block;
     height: 16px;
+    margin: 10px 0;
     font-weight: 400;
     font-size: 14px;
     line-height: 16.44px;
@@ -334,13 +335,13 @@ body {
 }
 
 .site-content--card-info i::before {
+    display:block;
     content:"\f005\f005\f005\f005";
     color: #0065FC;
 }
 
 .site-content--display-more {
-    width: 811px;
-    height: 21px;
+    width: 100%;
     font-weight: 700;
     font-size: 18px;
     line-height: 21.13px;
@@ -350,7 +351,6 @@ body {
 .site-content--offers-sponsored {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 30%;
     padding: 30px;
@@ -525,6 +525,7 @@ body {
     justify-content: space-between;
     background-color: #F2F2F2;
     padding: 20px;
+    margin-top: 30px;;
 }
 
 .site-info {
@@ -570,9 +571,7 @@ body {
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
     
-   
-    
-    .site-content--offers-sponsored {
+     .site-content--offers-sponsored {
         margin: 50px 0;
         height: 252px;
         gap: 20px;
@@ -650,6 +649,11 @@ body {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+
    .site-header--filter-bar {
         display: flex;
         flex-direction: column;
@@ -707,19 +711,22 @@ body {
     }
 
     .site-content--col-activity {
-        height: 390px;
-    }
-
-    .site-content--activity-title {
-        margin-bottom: 30px;
+        width: 100%;
     }
 
     .site-content--activity-frame {
-        height: 75%;
+        height: 270px;
     }
 
     .site-content-card {
-        height: 100%;
+        width: 30%;
+        height: 70%;
+        box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    .site-content--activity-pic {
+        height: 75%;
+        width: 100%;
     }
 
     .site-footer {
@@ -891,7 +898,7 @@ body {
 
     .site-content--col-activity {
         padding: 20px;
-        height: 25%;
+        
     }
 
     .site-content--activity-title {
@@ -917,10 +924,8 @@ body {
    }
 
    .site-content--activity-legend {
-        display: block;
         height: 30%;
         padding: 10px;
-        
     }
 
    .site-footer {
