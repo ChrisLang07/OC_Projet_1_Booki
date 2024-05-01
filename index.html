@@ -15,54 +15,54 @@
 </head>
 
 <body>
-
     <main>
 
         <header class="container">
-            
-            <div class="site-header--top-bar">
-                
+
+            <!-- logo Booki and nav menu-->
+
+            <nav class="site-header--top-bar">
                 <div class="site-header--logo">
-                    <img src="./images//logo/Booki.png" class="site-header--booki" title="Booki" alt="logo_booki">
+                    <img class="logo" src="images/logo/Booki.png" titre="Logo Booki" alt="Logo du site booki">
                 </div>
-                
-                <ul class="site-header--list">
+            
+                <ul class="site-header--menu">
                     <li>
-                        <a class="" href="#marseille">Hébergements</a>
+                        <a class="site-header--nav-link-one" href="#">Hébergements</a>
                     </li>
                     <li>
-                        <a class="" href="#activity">Activités</a>
+                        <a class="site-header--nav-link-two" href="#">Activités</a>
                     </li>
                 </ul>
+            </nav>
 
-            </div>
+                            <!-- Headline  and search zone -->    
             
-            <div class="site-header--info-group">
-                
+            <article class="container">
                 <div class="site-header--headline">
-                    <h1>Trouver votre hébergements pour des vacances de rêves<br />
-                    <span class="site-header--headline-comment">En plein centre-ville ou en pleine nature</span></h1>
+                    <h1>Trouver votre hébergement pour des vacances de rêves<br />
+                    <span>En plein centre-ville ou en pleine nature</span></h1>
                 </div>
-            
+
                 <div class="site-header--search-bar">
-                        
                     <div class="site-header--fa-location">
                         <i class="fa-solid fa-location-dot"></i>
                     </div>
                 
-                    <form class="site-header--form">
-                        <input class="site-header--input" type="text" value="Marseille, France">
+                    <form action="xyz" method="get">
+                        <input type="search" id="search" name="search" value="Marseille, France">
                     </form>
                         
                     <div class="site-header--finder">
                         <button class="site-header--button" type="button">Rechercher</button>
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
-                
                 </div>
-                
+
+                                <!-- filter bar-->    
+
                 <div class="site-header--filter-bar">
-                
+                    
                     <div class="filter">
                         <span class="site-header--filter-title">Filtres</span>
                     </div>
@@ -70,203 +70,181 @@
                     <div class="site-header--filter-tag">
                 
                         <div class="tag">
-                            <span class="site-header--text-eco">
-                                <i class="fa-solid fa-money-bill-wave"></i> Économique
-                            </span>
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                            <a class="site-header--filter-link" href="xyz">Économique</a>
+                            
                         </div>
                     
                         <div class="tag">
-                            <span class="site-header--text-family">
-                                <i class="fa-solid fa-person"></i> Familial
-                            </span>
+                             <i class="fa-solid fa-person"></i>
+                             <a class="site-header--filter-link" href="xyz">Familial</a>
                         </div>
                     
                         <div class="tag">
-                            <span class="site-header--text-romantic">
-                            <i class="fa-solid fa-heart"></i> Romantique
-                        </span>
+                            <i class="fa-solid fa-heart"></i>
+                            <a class="site-header--filter-link" href="xyz">Romantique</a>
                         </div>
                     
                         <div class="tag">
-                            <span class="site-header--text-nuggets">
-                            <i class="fa-solid fa-fire"></i> Nos pépites</span>
+                            <i class="fa-solid fa-fire"></i>
+                            <a class="site-header--filter-link" href="xyz">Nos pépites</a>
                         </div>
-                    
                     </div>
-
                 </div>
 
+                                <!-- Info-bar-->
+            
                 <div class="site-header--info">
                     <div class="site-header--info-icon">
                         <span class="site-header--icon">i</span>
                     </div>
-                    <span class="site-header--text-info">Plus de 500 logements sont disponibles dans cette ville</span>
-                </div>
-            </div>
-        
-        </header>
-
-        <div class="container">
-            
-            <section class="site-content--group">
-                
-                <div id="marseille" class="site-content--offers-main">
                     
-                    <div class="site-content--row-title">
-                        <span >Hébergements à Marseille</span>
+                    <div class="site-header--text-info">
+                        <span>Plus de 500 logements sont disponibles dans cette ville</span>
+                    </div>
+                                    
+                </div>                
+            </article>
+        </header>
+        
+        <section class="container">
+
+            <div class="site-content--offers-all">
+            
+                <article class="site-content--offers-main">
+                    
+                    <div class="site-content--offers-title">
+                        <span>Hébergement à Marseille</span>
                     </div>
                     
-
-                    <div class="site-content--row-cards">
+                    <div class="site-content--main-row-cards">
                         
-                        <div class="site-content--card">
-                            
-                            <a href="#xyz"><img class="site-content--picture" src="images/hebergements/fred-kleber.jpg" title="Hôtel du port" alt="Chambre lumineuse aux murs gris clair, fenêtre et voiles blancs, deux lits simples habillés de draps marrons, avec des coussins de décoration au style industriel"></a>
-                            
-                            <div class="site-content--card-info">
+                        <div class="site-content--row-card">
+                        
+                            <a href="#xyz"><img class="site-content--row-pic" src="images/hebergements/fred-kleber.jpg" title="Hôtel du port" alt="Chambre lumineuse aux murs gris clair, fenêtre et voiles blancs, deux lits simples habillés de draps marrons, avec des coussins de décoration au style industriel"></a>
+                                    
+                            <div class="site-content--row-card-info">
                                 <a href="#xyz">Hôtel du port</a>
                                 <span>Nuit à partir de <strong>52&euro;</strong></span>
                                 <i class="fa-solid fa-star"></i>
                             </div>
-                        
                         </div>
-                        <div class="site-content--card">
+                        <div class="site-content--row-card">
+                                    
+                            <a href="#xyz"><img class="site-content--row-pic" src="images/hebergements/febrian-zakaria.jpg" title="Hôtel Chez Amina" alt="Chambre lumineuse avec un lit simple aux draps blancs, avec fenêtre et un bureau équipé d'une lampe, surplombé par une télévision murale"></a>
                             
-                            <a href="#xyz"><img class="site-content--picture" src="images/hebergements/febrian-zakaria.jpg" title="Hôtel Chez Amina" alt="Chambre lumineuse avec un lit simple aux draps blancs, avec fenêtre et un bureau équipé d'une lampe, surplombé par une télévision murale"></a>
-                            
-                            <div class="site-content--card-info">
+                            <div class="site-content--row-card-info">
                                 <a href="#xyz">Hôtel Chez Amina</a>
                                 <span>Nuit à partir de <strong>96&euro;</strong></span>
                                 <i class="fa-solid fa-star"></i>
                             </div>
-                        
                         </div>
-                        <div class="site-content--card">
+                        <div class="site-content--row-card">
                             
-                            <a href="#xyz"><img class="site-content--picture" src="images/hebergements/reisetopia.jpg" title="Hôtel Les mouettes" alt="Chambre avec un lit double, une tablette et des appliques murales, ainsi qu'un placard aux portes coulissantes habillées de miroirs"></a>
-                            
-                            <div class="site-content--card-info">
+                            <a href="#xyz"><img class="site-content--row-pic" src="images/hebergements/reisetopia.jpg" title="Hôtel Les mouettes" alt="Chambre avec un lit double, une tablette et des appliques murales, ainsi qu'un placard aux portes coulissantes habillées de miroirs"></a>
+                                    
+                            <div class="site-content--row-card-info">
                                 <a href="#xyz">Hôtel Les mouettes</a>
                                 <span>Nuit à partir de <strong>76&euro;</strong></span>
                                 <i class="fa-solid fa-star"></i>
-                            </div>
-                        
+                            </div>   
                         </div>
-                        
-                        <div class="site-content--card">
-                            
-                            <a href="#xyz"><img class="site-content--picture" src="images/hebergements/annie-spratt.jpg" title="Hôtel de la mer" alt="Chambre lumineuse avec un lit double encadré par deux tables de chevet avec lampes, surmonté d'un grand tableau représentant la mer"></a>
-                            
-                            <div class="site-content--card-info">
-                                <a href="#xyz">Hôtel de la mer</a>
-                                <span>Nuit à partir de <strong>46&euro;</strong></span>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        
-                        </div>
-                        <div class="site-content--card">
-                            
-                            <a href="#xyz"><img class="site-content--picture" src="images/hebergements/marcus-loke.jpg" title="Auberge de La Canebière" alt="Chambres en centre ville avec deux lits superposés et fenêtres donnant sur la rue"></a>
-                            
-                            <div class="site-content--card-info">
-                                <a href="#xyz">Auberge de La Canebière</a>
-                                <span>Nuit à partir de <strong>25&euro;</strong></span>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        
-                        </div>
-                        <div class="site-content--card">
-                            
-                            <a href="#xyz"><img class="site-content--picture" src="images/hebergements/nicate-lee.jpg" title="Auberge Le Panier" alt="Chambre avec lits superposés en bois décoratif, offrant 4 places, avec des rideaux pour plus de discrétion"></a>
-                            
-                            <div class="site-content--card-info">
-                                <a href="#xyz">Auberge Le Panier</a>
-                                <span>Nuit à partir de <strong>23&euro;</strong></span>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        
-                        </div>
-                        
-
                     </div>
+
+                    <div class="site-content--main-row-cards">
+                        
+                            <div class="site-content--row-card">
+                            
+                                <a href="#xyz"><img class="site-content--row-pic" src="images/hebergements/annie-spratt.jpg" title="Hôtel de la mer" alt="Chambre lumineuse avec un lit double encadré par deux tables de chevet avec lampes, surmonté d'un grand tableau représentant la mer"></a>
+                                        
+                                <div class="site-content--row-card-info">
+                                    <a href="#xyz">Hôtel de la mer</a>
+                                    <span>Nuit à partir de <strong>46&euro;</strong></span>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="site-content--row-card">
+                                        
+                                <a href="#xyz"><img class="site-content--row-pic" src="images/hebergements/marcus-loke.jpg" title="Auberge de La Canebière" alt="Chambres en centre ville avec deux lits superposés et fenêtres donnant sur la rue"></a>
+                                
+                                <div class="site-content--row-card-info">
+                                    <a href="#xyz">Auberge de La Canebière</a>
+                                    <span>Nuit à partir de <strong>25&euro;</strong></span>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="site-content--row-card">
+                                
+                                <a href="#xyz"><img class="site-content--row-pic" src="images/hebergements/nicate-lee.jpg" title="Auberge Le Panier" alt="Chambre avec lits superposés en bois décoratif, offrant 4 places, avec des rideaux pour plus de discrétion"></a>
+                                        
+                                <div class="site-content--row-card-info">
+                                    <a href="#xyz">Auberge Le Panier</a>
+                                    <span>Nuit à partir de <strong>23&euro;</strong></span>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>   
+                            </div>
+                        </div>
                     
                     <div class="site-content--display-more"> 
                         <span>Afficher plus</span>
                     </div>
+                </article>
                 
-                </div>
-                
-                
-                <article class="site-content--offers-sponsored">
+                <article class="site-content--sponsored-main">
                     
                     <div class="site-content--sponsored-title">
-                        <div class="site-content--col-title">
-                            <span>Les plus populaires</span>
-                        </div>
-                        
-                        <i class="fa-solid fa-chart-line"></i>
+                        <span>Les plus populaires</span>
                     </div>
-                    
-                    <div class="site-content--col-cards">
-                            
-                        <div class="site-content--pic-card">
-                                
-                            <img class="site-content--col-picture" src="images/hebergements/emile-guillemot.jpg" title="Hôtel Le soleil du matin" alt="Chambre avec lit drapé de blanc, miroir mural et de plafond, dominée par des tons verts apaisants">
-                                
-                            <div class="site-content--col-card-info">
-                                    <h3 class="site-content--col-card-one">Hôtel Le soleil du matin<br />
-                                        <span class="site-content--col-card-info-price">Nuit à partir de <strong>128&euro;</strong></span>
-                                    </h3>
-                                    
-                                    <i class="fa-solid fa-star"></i>
-                            </div>
-                            
-                        </div>
-                            
-                        <div class="site-content--pic-card">
-                                
-                            <img class="site-content--col-picture" src="images/hebergements/aw-creative.jpg" title="Chambres d'hôtes Au coeur de l'eau" alt="Chambre contemporaine au style industriel, dans des tons gris, avec lit beige et draps blancs.">
-                                
-                            <div class="site-content--col-card-info">
-                                    <h3 class="site-content--col-card-two">Chambres d'hôtes Au coeur de l'eau<br />
-                                    <span class="site-content--col-card-info-price">Nuit à partir de <strong>71&euro;</strong></span>
-                                    </h3>
-                                    
-                                    <i class="fa-solid fa-star"></i>
-                            </div>
-                            
-                        </div>
-                            
-                        <div class="site-content--pic-card">
-                                
-                            <img class="site-content--col-picture" src="images/hebergements/febrian-zakaria2.jpg" title="Hôtel Bleu et Blanc" alt="Chambre avec lit double dans des tons gris clair et blancs, avec tablettes murales et une applique murale de chaque côté">
-                                
-                            <div class="site-content--col-card-info">
-                                    <h3 class="site-content--col-card-three">Hôtel Bleu et Blanc<br />
-                                    <span class="site-content--col-card-info-price">Nuit à partir de <strong>68&euro;</strong></span>
-                                    </h3>
-                                    
-                                    <i class="fa-solid fa-star"></i>
-                            </div>
-                            
-                        </div>
-                    
-                    </div>
-                
-                </article>
-            
-            </section>
-            
-            <section class="container">
 
-                <article class="site-content--col-activity">
+                    <div class="site-content--sponsored-col-cards">
+                        
+                        <div class="site-content--col-card">
+                            
+                            <img class="site-content--col-pic" src="images/hebergements/emile-guillemot.jpg" title="Hôtel Le soleil du matin" alt="Chambre avec lit drapé de blanc, miroir mural et de plafond, dominée par des tons verts apaisants">
+                                    
+                            <div class="site-content--col-card-info">
+                                <h2>Hôtel Le soleil du matin</h2>
+                                <span>Nuit à partir de <strong>46&euro;</strong></span>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="site-content--col-card">
+                            
+                            <img class="site-content--col-pic" src="images/hebergements/aw-creative.jpg" title="Chambres d'hôtes Au coeur de l'eau" alt="Chambre contemporaine au style industriel, dans des tons gris, avec lit beige et draps blancs">
+                                    
+                            <div class="site-content--col-card-info">
+                                <h2>Chambres d'hôtes Au coeur de l'eau</h2>
+                                <span>Nuit à partir de <strong>71&euro;</strong></span>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="site-content--col-card">
+                            
+                            <img class="site-content--col-pic" src="images/hebergements/febrian-zakaria2.jpg" title="Hôtel Bleu et Blanc" alt="Chambre avec lit double dans des tons gris clair et blancs, avec tablettes murales et une applique murale de chaque côté">
+                                    
+                            <div class="site-content--col-card-info">
+                                <h2>Hôtel Bleu et Blanc</h2><br />
+                                <span>Nuit à partir de <strong>68&euro;</strong></span>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="site-content--main-activity">
+                <article class="site-content--activity">
+                
                     <div class="site-content--activity-title">
                         <span>Activités à Marseille</span>
                     </div>
-                    
     
                     <div id="activity" class="site-content--activity-frame">
-                        
+                                
                         <div class="site-content-card">
                             <a href="#xyz"><img class="site-content--activity-pic" src="images/activites/reno-laithienne.jpg" title="Le vieux Port" alt="Bâteau amarrés avec ou sans mât, les voiles pliées, dans le Vieux-Port"></a>
                             <div class="site-content--activity-legend">
@@ -294,36 +272,31 @@
                                 <a href="#xyz" class="site-content--activity-place">Notre-Dame-de la-Garde</a>
                             </div>
                         </div>
-    
                     </div>
                 </article>
-             </section>
-
-        </div>
-    
+            </div>
 
         <footer class="container">
             <div class="site-footer">
-                <div class="site-info">
+                <div class="site-footer--info">
                     <h3>A propos</h3>
                     <a>Fonctionnement du site</a>
                     <a>Conditions générales</a>
                     <a>Données et confidentialité</a>
                 </div>
 
-                <div class="site-info">
+                <div class="site-footer--info">
                     <h3>Nos hébergements</h3>
                     <a>Charte qualité</a>
                     <a>Proposer votre hotel</a>
                 </div>
 
-                <div class="site-info">
+                <div class="site-footer--info">
                     <h3>Assistance</h3>
                     <a>Centre d'aide</a>
                     <a>Nous contacter</a>
-                </div>
+                </div>       
             </div>
-        </footer>
+        </footer>         
     </main>
 </body>
-</html>
