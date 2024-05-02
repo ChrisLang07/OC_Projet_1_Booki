@@ -185,12 +185,15 @@ i.fa-solid {
     font-weight: 500;
 }
 
+/* Main offers and sponsored group */
+
 .site-content--offers-all {
     display: flex;
     gap: 40px;
     width: 93%;
     margin: auto;
 }
+/* Main offers group */
 
 .site-content--offers-main {
     width: 66%;
@@ -264,6 +267,8 @@ i.fa-solid {
     font-weight: 700;
 }
 
+/* Offers sponsored group */
+
 .site-content--sponsored-main {
     width: 34%;
     height: 614px;
@@ -323,14 +328,12 @@ i.fa-solid {
     font-weight: 400;
 }
 
+/* Activity group */
+
 .site-content--main-activity {
     width: 93%;
     margin: auto;
 }
-
-/*.site-content--activity {
-    margin: 50px;
-}*/
 
 .site-content--activity-title {
     font-size: 1.3rem;
@@ -371,6 +374,8 @@ i.fa-solid {
     color: rgba(0, 0, 0, 1);
 }
 
+/* footer information group */
+
 .site-footer {
     display: flex;
     justify-content: space-between;
@@ -399,31 +404,9 @@ i.fa-solid {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /****** Media queries ***********/
 
+/* For smartphone */
 
 @media screen and (min-width: 320px) and (max-width: 767.98px) {
     
@@ -563,8 +546,6 @@ i.fa-solid {
         margin: auto;
     }
 
-   
-
     .site-content--offers-main {
         display: flex;
         flex-direction: column;
@@ -574,8 +555,6 @@ i.fa-solid {
         margin: auto;
         padding: 0;
         background-color: #FFFFFF;
-
-        
     }
 
     .site-content--main-row-cards {
@@ -604,7 +583,6 @@ i.fa-solid {
         width: 100%;
         margin: auto;
         padding: 0;
-
     }
 
     .site-content--activity {
@@ -644,33 +622,10 @@ i.fa-solid {
         width: 70%;
         
     }
-    
-    
-
-    
-
-
-
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* For tablets */
 
 @media screen and (min-width: 768px) and (max-width: 1023.98px) {
 
@@ -684,7 +639,8 @@ i.fa-solid {
     }
 
     .site-header--search-bar {
-        width: 50%;
+        width: 100%;
+        max-width: 377px;
     }
 
     .site-header--filter-bar {
@@ -802,14 +758,9 @@ i.fa-solid {
     .site-content--activity-legend {
         padding: 10px;
     }
-
-    
-    
-    
-
-      
-
 }
+
+/* For desktop */
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
     
@@ -823,7 +774,8 @@ i.fa-solid {
     }
 
     .site-header--search-bar {
-        width: 38%;
+        width: 100%;
+        max-width: 377px;
     }
 
     .site-header--filter-bar {
