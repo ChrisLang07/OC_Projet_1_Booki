@@ -15,298 +15,401 @@
 </head>
 
 <body>
-    <main>
+    <!---------------------------- Site HEADER ---------------------------->
+    <header class="container">
 
-        <header class="container">
+        <!---------------- Site Header - TOPBAR / MENU -------------------->
 
-            <!-- logo Booki and nav menu-->
-
-            <nav class="site-header--top-bar">
-                <div class="site-header--logo">
-                    <img class="logo" src="images/logo/Booki.png" titre="Logo Booki" alt="Logo du site booki">
-                </div>
-            
-                <ul class="site-header--menu">
-                    <li>
-                        <a class="site-header--nav-link-one" href="#">Hébergements</a>
-                    </li>
-                    <li>
-                        <a class="site-header--nav-link-two" href="#">Activités</a>
-                    </li>
-                </ul>
+        <div class="site-header--topbar">
+            <h1 class="site-header--topbar-title">
+                <img class="site-header--topbar-logo" src="./images/logo/Booki.png" alt="Booki">
+                <span hidden>Booki</span>
+            </h1>
+            <nav class="site-header--topbar-menu">
+                <a class="site-header--topbar-link" href="#">Hébergements</a>
+                <a class="site-header--topbar-link" href="#">Activités</a>
             </nav>
+        </div>
 
-                            <!-- Headline  and search zone -->    
-            
-            <article class="container">
-                <div class="site-header--headline">
-                    <h1>Trouver votre hébergement pour des vacances de rêves<br />
-                    <span>En plein centre-ville ou en pleine nature</span></h1>
+        <!----------------- Site Header - SEARCH-GROUP -------------------------->
+
+        <div class="site-header--search-headline">
+            <span class="site-header--search-title">Trouver votre hébergement pour des vacances de rêve</span><br>
+            <span>En plein centre ville ou en pleine nature</span>
+        </div>
+
+        <!----------------- Site Header - SEARCH-BAR --------------------------->
+
+        <form>
+            <div class="site-header--search-form">
+                <div class="site-header--fa-location">
+                    <i class="fa-solid fa-location-dot"></i>
                 </div>
 
-                <div class="site-header--search-bar">
-                    <div class="site-header--fa-location">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                
-                    <form action="xyz" method="get">
-                        <input type="search" id="search" name="search" value="Marseille, France">
-                    </form>
-                        
-                    <div class="site-header--finder">
-                        <button class="site-header--button" type="button">Rechercher</button>
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                </div>
+                <label for="search" hidden>Recherche</label>
+                <input type="search" id="search" name="search" placeholder="Rechercher une ville">
 
-                                <!-- filter bar-->    
+                <button class="site-header--button" type="submit">
+                    <span>Rechercher</span>
+                </button>
+            </div>
+        </form>
 
-                <div class="site-header--filter-bar">
-                    
-                    <div class="filter">
-                        <span class="site-header--filter-title">Filtres</span>
-                    </div>
+        <!------------------ Site Header - FILTERS -------------------------->
 
-                    <div class="site-header--filter-tag">
-                
-                        <div class="tag">
-                            <i class="fa-solid fa-money-bill-wave"></i>
-                            <a class="site-header--filter-link" href="xyz">Économique</a>
-                            
-                        </div>
-                    
-                        <div class="tag">
-                             <i class="fa-solid fa-person"></i>
-                             <a class="site-header--filter-link" href="xyz">Familial</a>
-                        </div>
-                    
-                        <div class="tag">
-                            <i class="fa-solid fa-heart"></i>
-                            <a class="site-header--filter-link" href="xyz">Romantique</a>
-                        </div>
-                    
-                        <div class="tag">
-                            <i class="fa-solid fa-fire"></i>
-                            <a class="site-header--filter-link" href="xyz">Nos pépites</a>
-                        </div>
-                    </div>
-                </div>
+        <!------------------ Site Header - Filters-TITLE --------------------->
 
-                                <!-- Info-bar-->
-            
-                <div class="site-header--info">
-                    <div class="site-header--info-icon">
-                        <span class="site-header--icon">i</span>
-                    </div>
-                    
-                    <div class="site-header--text-info">
-                        <span>Plus de 500 logements sont disponibles dans cette ville</span>
-                    </div>
-                                    
-                </div>                
-            </article>
+        <div class="site-header--filters">
+
+            <h3 class="site-header--filters-title">Filtres</h3>
+
+            <!------------------ Site Header - Filters-TAGS --------------------->
+
+            <div class="site-header--filters-all-tags">
+
+                <!------------------ Site Header - TAG : ECONOMY --------------->
+
+                <a class="site-header--filters-tag" href="#">
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    <span class="site-header--filters-tag-name">Économique</span>
+                </a>
+
+                <!------------------ Site Header - TAG : FAMILY--------------->
+
+                <a class="site-header--filters-tag" href="#">
+                    <i class="fa-solid fa-person"></i>
+                    <span class="site-header--filters-tag-name">Familial</span>
+                </a>
+
+                <!------------------ Site Header - TAG : ROMANTIC --------------->
+
+                <a class="site-header--filters-tag" href="#">
+                    <i class="fa-solid fa-heart"></i>
+                    <span class="site-header--filters-tag-name">Romantique</span>
+                </a>
+
+                <!--------------- Site Header - TAG : BEST DEALS ------------->
+
+
+                <a class="site-header--filters-tag" href="#">
+                    <i class="fa-solid fa-fire"></i>
+                    <span class="site-header--filters-tag-name">Nos pépites</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!---------------------- Site Section - MAIN CONTENT ------------------------>
+
+    <section class="container">
+
+        <!---------------------- Site Section - HEADER ------------------------->
+
+        <header class="section-header">
+
+            <!------------------ Site Section- Header-INFO --------------------->
+
+            <div class="section-header--info">
+                <span class="ico-info">
+                    <i class="fa-solid fa-info"></i>
+                </span>
+                <span class="text-info">Plus de 500 logements disponibles</span>
+            </div>
+
         </header>
-                        <!-- Main and sponsored offers-->
-        
-        <section class="container">
 
-            <div class="site-content--offers-all">
-            
-                             <!--Main offers group-->
-                
-                <article class="site-content--offers-main">
-                    
-                    <div class="site-content--offers-title">
-                        <span>Hébergement à Marseille</span>
-                    </div>
-                    
-                        <!-- Main offers group first row -->
+        <!----------------------- Site Section - CONTENT ------------------------>
 
-                    <div class="site-content--main-row-cards">
-                        
-                        <div class="site-content--row-card">
-                        
-                            <a href="#xyz"><img class="site-content--row-pic" src="images/hebergements/fred-kleber.jpg" title="Hôtel du port" alt="Chambre lumineuse aux murs gris clair, fenêtre et voiles blancs, deux lits simples habillés de draps marrons, avec des coussins de décoration au style industriel"></a>
-                                    
-                            <div class="site-content--row-card-info">
-                                <a href="#xyz">Hôtel du port</a>
-                                <span>Nuit à partir de <strong>52&euro;</strong></span>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                        <div class="site-content--row-card">
-                                    
-                            <a href="#xyz"><img class="site-content--row-pic" src="images/hebergements/febrian-zakaria.jpg" title="Hôtel Chez Amina" alt="Chambre lumineuse avec un lit simple aux draps blancs, avec fenêtre et un bureau équipé d'une lampe, surplombé par une télévision murale"></a>
-                            
-                            <div class="site-content--row-card-info">
-                                <a href="#xyz">Hôtel Chez Amina</a>
-                                <span>Nuit à partir de <strong>96&euro;</strong></span>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                        <div class="site-content--row-card">
-                            
-                            <a href="#xyz"><img class="site-content--row-pic" src="images/hebergements/reisetopia.jpg" title="Hôtel Les mouettes" alt="Chambre avec un lit double, une tablette et des appliques murales, ainsi qu'un placard aux portes coulissantes habillées de miroirs"></a>
-                                    
-                            <div class="site-content--row-card-info">
-                                <a href="#xyz">Hôtel Les mouettes</a>
-                                <span>Nuit à partir de <strong>76&euro;</strong></span>
-                                <i class="fa-solid fa-star"></i>
-                            </div>   
-                        </div>
-                    </div>
+        <div class="section-content">
 
-                            <!-- Main offers group second row -->
+            <!----------------------- Site Section - OFFERS --------------------->
 
-                    <div class="site-content--main-row-cards">
-                        
-                            <div class="site-content--row-card">
-                            
-                                <a href="#xyz"><img class="site-content--row-pic" src="images/hebergements/annie-spratt.jpg" title="Hôtel de la mer" alt="Chambre lumineuse avec un lit double encadré par deux tables de chevet avec lampes, surmonté d'un grand tableau représentant la mer"></a>
-                                        
-                                <div class="site-content--row-card-info">
-                                    <a href="#xyz">Hôtel de la mer</a>
-                                    <span>Nuit à partir de <strong>46&euro;</strong></span>
+            <div class="section-content--offers">
+
+                <!------------------ Site Section - Offers TITLE ---------------->
+
+                <h2 class="section-offers-title">Hébergements à Marseille</h2>
+
+                <!------------------- Site Section - Offers CARDS --------------->
+
+                <div class="section-offers-cards">
+
+                    <!---------------Site Section - Cards : Hôtel du port ------->
+
+                    <a href="#" class="article">
+                        <article class="card">
+                            <img class="card-pic" src="images/hebergements/fred-kleber.jpg" title="Hôtel du port"
+                                alt="Chambre lumineuse aux murs gris clair, fenêtre et voiles blancs, deux lits simples habillés de draps marrons, avec des coussins de décoration au style industriel">
+                            <div class="card-info">
+                                <span class="card-title">Hôtel du port</span>
+                                <span class="card-price">Nuit à partir de <strong>52&euro;</strong></span>
+                                <span class="card-icons">
                                     <i class="fa-solid fa-star"></i>
-                                </div>
+                                </span>
                             </div>
-                            <div class="site-content--row-card">
-                                        
-                                <a href="#xyz"><img class="site-content--row-pic" src="images/hebergements/marcus-loke.jpg" title="Auberge de La Canebière" alt="Chambres en centre ville avec deux lits superposés et fenêtres donnant sur la rue"></a>
-                                
-                                <div class="site-content--row-card-info">
-                                    <a href="#xyz">Auberge de La Canebière</a>
-                                    <span>Nuit à partir de <strong>25&euro;</strong></span>
+                        </article>
+                    </a>
+
+                    <!--------- Site Section - Cards : Hôtel Chez Amina --------->
+
+                    <a href="#" class="article">
+                        <article class="card">
+                            <img class="card-pic" src="images/hebergements/febrian-zakaria.jpg" title="Hôtel Chez Amina"
+                                alt="Chambre lumineuse avec un lit simple aux draps blancs, avec fenêtre et un bureau équipé d'une lampe, surplombé par une télévision murale">
+                            <div class="card-info">
+                                <span class="card-title">Hôtel Chez Amina</span>
+                                <span class="card-price">Nuit à partir de <strong>96&euro;</strong></span>
+                                <span class="card-icons">
                                     <i class="fa-solid fa-star"></i>
-                                </div>
+                                </span>
                             </div>
-                            <div class="site-content--row-card">
-                                
-                                <a href="#xyz"><img class="site-content--row-pic" src="images/hebergements/nicate-lee.jpg" title="Auberge Le Panier" alt="Chambre avec lits superposés en bois décoratif, offrant 4 places, avec des rideaux pour plus de discrétion"></a>
-                                        
-                                <div class="site-content--row-card-info">
-                                    <a href="#xyz">Auberge Le Panier</a>
-                                    <span>Nuit à partir de <strong>23&euro;</strong></span>
+                        </article>
+                    </a>
+
+                    <!---------- Site Section - Cards : Hôtel Les mouettes ------>
+
+                    <a href="#" class="article">
+                        <article class="card">
+                            <img class="card-pic" src="images/hebergements/reisetopia.jpg" title="Hôtel Les mouettes"
+                                alt="Chambre avec un lit double, une tablette et des appliques murales, ainsi qu'un placard aux portes coulissantes habillées de miroirs">
+                            <div class="card-info">
+                                <span class="card-title">Hôtel Les mouettes</span>
+                                <span class="card-price">Nuit à partir de <strong>76&euro;</strong></span>
+                                <span class="card-icons">
                                     <i class="fa-solid fa-star"></i>
-                                </div>   
+                                </span>
                             </div>
-                        </div>
-                    
-                    <div class="site-content--display-more"> 
-                        <span>Afficher plus</span>
-                    </div>
-                </article>
-                            <!--Offers sponsored group-->
-                
-                <article class="site-content--sponsored-main">
-                    
-                    <div class="site-content--sponsored-title">
-                        <span>Les plus populaires</span>
-                    </div>
+                        </article>
+                    </a>
 
-                    <div class="site-content--sponsored-col-cards">
-                        
-                        <div class="site-content--col-card">
-                            
-                            <img class="site-content--col-pic" src="images/hebergements/emile-guillemot.jpg" title="Hôtel Le soleil du matin" alt="Chambre avec lit drapé de blanc, miroir mural et de plafond, dominée par des tons verts apaisants">
-                                    
-                            <div class="site-content--col-card-info">
-                                <h2>Hôtel Le soleil du matin</h2>
-                                <span>Nuit à partir de <strong>46&euro;</strong></span>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
+                    <!-------------- Site Section - Cards : Hôtel de la mer ---------->
 
-                        <div class="site-content--col-card">
-                            
-                            <img class="site-content--col-pic" src="images/hebergements/aw-creative.jpg" title="Chambres d'hôtes Au coeur de l'eau" alt="Chambre contemporaine au style industriel, dans des tons gris, avec lit beige et draps blancs">
-                                    
-                            <div class="site-content--col-card-info">
-                                <h2>Chambres d'hôtes Au coeur de l'eau</h2>
-                                <span>Nuit à partir de <strong>71&euro;</strong></span>
-                                <i class="fa-solid fa-star"></i>
+                    <a href="#" class="article">
+                        <article class="card">
+                            <img class="card-pic" src="images/hebergements/annie-spratt.jpg" title="Hôtel de la mer"
+                                alt="Chambre lumineuse avec un lit double encadré par deux tables de chevet avec lampes, surmonté d'un grand tableau représentant la mer">
+                            <div class="card-info">
+                                <span class="card-title">Hôtel de la mer</span>
+                                <span class="card-price">Nuit à partir de <strong>46&euro;</strong></span>
+                                <span class="card-icons">
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
                             </div>
-                        </div>
+                        </article>
+                    </a>
 
-                        <div class="site-content--col-card">
-                            
-                            <img class="site-content--col-pic" src="images/hebergements/febrian-zakaria2.jpg" title="Hôtel Bleu et Blanc" alt="Chambre avec lit double dans des tons gris clair et blancs, avec tablettes murales et une applique murale de chaque côté">
-                                    
-                            <div class="site-content--col-card-info">
-                                <h2>Hôtel Bleu et Blanc</h2>
-                                <span>Nuit à partir de <strong>68&euro;</strong></span>
-                                <i class="fa-solid fa-star"></i>
+                    <!-------------- Site Section - Cards : Auberge La Canebière ------>
+
+                    <a href="#" class="article">
+                        <article class="card">
+                            <img class="card-pic" src="images/hebergements/marcus-loke.jpg"
+                                title="Auberge de La Canebière"
+                                alt="Chambres en centre ville avec deux lits superposés et fenêtres donnant sur la rue">
+                            <div class="card-info">
+                                <span class="card-title">Auberge La Canebière</span>
+                                <span class="card-price">Nuit à partir de <strong>25&euro;</strong></span>
+                                <span class="card-icons">
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
                             </div>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-                                <!-- Suggested activities group-->
-        <section class="container">
-            <div class="site-content--main-activity">
-                <article class="site-content--activity">
-                
-                    <div class="site-content--activity-title">
-                        <span>Activités à Marseille</span>
-                    </div>
-    
-                    <div id="activity" class="site-content--activity-frame">
-                                
-                        <div class="site-content-card">
-                            <a href="#xyz"><img class="site-content--activity-pic" src="images/activites/reno-laithienne.jpg" title="Le vieux Port" alt="Bâteau amarrés avec ou sans mât, les voiles pliées, dans le Vieux-Port"></a>
-                            <div class="site-content--activity-legend">
-                                <a href="#xyz" class="site-content--activity-place">Vieux-Port</a>
+                        </article>
+                    </a>
+
+                    <!-------------- Site Section - Cards : Auberge Le Panier ------>
+
+                    <a href="#" class="article">
+                        <article class="card">
+                            <img class="card-pic" src="images/hebergements/nicate-lee.jpg" title="Auberge Le Panier"
+                                alt="Chambre avec lits superposés en bois décoratif, offrant 4 places, avec des rideaux pour plus de discrétion">
+                            <div class="card-info">
+                                <span class="card-title">Auberge Le Panier </span>
+                                <span class="card-price">Nuit à partir de <strong>23&euro;</strong></span>
+                                <span class="card-icons">
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
                             </div>
-                        </div>
-    
-                        <div class="site-content-card">
-                            <a href="#xyz"><img class="site-content--activity-pic" src="images/activites/paul-hermann.jpg" title="Fort de Pomègues" alt="Vue en contre-plongée du Fort de Pomègues qui domine l'horizon au sommet d'une colline rocheuse"></a>
-                            <div class="site-content--activity-legend">
-                                <a href="#xyz" class="site-content--activity-place">Fort de Pomègues</a>
-                            </div>
-                        </div>
-    
-                        <div class="site-content-card">
-                            <a href="#xyz"><img class="site-content--activity-pic" src="images/activites/kilyan-sockalingum.jpg" title="Parc national des Calanques" alt="Vue aérienne des falaises et de la mer du Parc National des Calanques, où les falaises escarpées rencontrent les eaux bleues de la Méditerranée"></a>
-                            <div class="site-content--activity-legend">
-                                <a href="#xyz" class="site-content--activity-place">Parc national des Calanques</a>
-                            </div>
-                        </div>
-    
-                        <div class="site-content-card">
-                            <a href="#xyz"><img class="site-content--activity-pic" src="images/activites/florian-wehde.jpg" title="Notre-Dame-de-la-Garde" alt="Vue contre-plongée avec Notre-Dame-de-la-Garde dominant la colline, au-dessus des toits en premier plan."></a>
-                            <div class="site-content--activity-legend">
-                                <a href="#xyz" class="site-content--activity-place">Notre-Dame-de la-Garde</a>
-                            </div>
-                        </div>
-                    </div>
-                </article>
+                        </article>
+                    </a>
+                </div>
+                <!----------------- Site Section - Offers FOOTER ----------------->
+
+                <footer class="section-footer">
+                    <a class="footer-link" href="#">Afficher plus</a>
+                </footer>
             </div>
 
-                                <!--footer information group-->
+            <!------------------- Site Section - SPONSORED ---------------------->
 
-        <footer class="container">
-            <div class="site-footer">
-                <div class="site-footer--info">
-                    <h3>A propos</h3>
-                    <a>Fonctionnement du site</a>
-                    <a>Conditions générales</a>
-                    <a>Données et confidentialité</a>
+            <div class="section-content--sponsored">
+
+
+
+                <!------------------ Site Section - Sponsored TITLE ------------->
+                <div class="section-sponsored-title">
+                    <h2 class="sponsored-title">Les Plus populaires</h2>
+                    <span><i class="fa-solid fa-chart-line"></i></span>
                 </div>
 
-                <div class="site-footer--info">
-                    <h3>Nos hébergements</h3>
-                    <a>Charte qualité</a>
-                    <a>Proposer votre hotel</a>
+
+
+                <!------------------- Site Section - Sponsored CARDS ------------>
+
+
+                <div class="section-sponsored-cards">
+
+                    <!---- Site Section - Cards : Hôtel Le soleil du matin ------>
+
+                    <a href="#" class="article">
+                        <article class="col-card">
+                            <img class="col-pic" src="images/hebergements/emile-guillemot.jpg"
+                                title="Hôtel Le soleil du matin"
+                                alt="Chambre avec lit drapé de blanc, miroir mural et de plafond, dominée par des tons verts apaisants">
+                            <div class="col-card-content">
+                                <div class="col-card-info">
+                                    <span class="card-title">Hôtel Le soleil du matin</span><br>
+                                    <span class="card-price">Nuit à partir de <strong>25&euro;</strong></span>
+                                </div>
+
+                                <span class="card-icons">
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </div>
+                        </article>
+                    </a>
+
+                    <!--  Site Section - Cards : Chambres d'hôtes Au coeur de l'eau -->
+
+                    <a href="#" class="article">
+                        <article class="col-card">
+                            <img class="col-pic" src="images/hebergements/aw-creative.jpg"
+                                title="Chambres d'hôtes Au coeur de l'eau"
+                                alt="Chambre contemporaine au style industriel, dans des tons gris, avec lit beige et draps blancs">
+                            <div class="col-card-content">
+                                <div class="col-card-info">
+                                    <span class="card-title">Chambres d'hôtes Au coeur de l'eau</span><br>
+                                    <span class="card-price">Nuit à partir de <strong>71&euro;</strong></span>
+                                </div>
+
+                                <span class="card-icons">
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </div>
+                        </article>
+                    </a>
+
+                    <!----------- Site Section - Cards : Hôtel Les mouettes --------->
+
+                    <a href="#" class="article">
+                        <article class="col-card">
+                            <img class="col-pic" src="images/hebergements/reisetopia.jpg" title="Hôtel Bleu et Blanc"
+                                alt="Chambre avec un lit double, une tablette et des appliques murales, ainsi qu'un placard aux portes coulissantes habillées de miroirs">
+                            <div class="col-card-content">
+                                <div class="col-card-info">
+                                    <span class="card-title">Hôtel Bleu et Blanc</span><br>
+                                    <span class="card-price">Nuit à partir de <strong>68&euro;</strong></span>
+                                </div>
+
+                                <span class="card-icons">
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------------- Site Section - ACTIVITY ---------------------------->
+
+    <section class="container">
+
+        <!----------------- Site Section - Activity - TITLE --------------------->
+
+        <div class="section-activity-content">
+            <div class="section-activity-headline">
+                <h2 class="section-activity-title">Activités à Marseille</h2>
+            </div>
+
+            <!----------------- Site Section - Activity - CARDS ------------------>
+
+            <div class="section-activity-cards">
+                <a href="#" class="activity-article">
+                    <article class="activity-card">
+                        <img class="activity-pic" src="images/activites/reno-laithienne.jpg" title="Le vieux Port"
+                            alt="Bâteau amarrés avec ou sans mât, les voiles pliées, dans le Vieux-Port">
+                        <div class="activity-card-content">
+                            <span class="activity-card-info">Vieux-Port</span>
+                        </div>
+                    </article>
+                </a>
+                <a href="#" class="activity-article">
+                    <article class="activity-card">
+                        <img class="activity-pic" src="images/activites/paul-hermann.jpg" title="Fort de Pomègues"
+                            alt="Vue en contre-plongée du Fort de Pomègues qui domine l'horizon au sommet d'une colline rocheuse">
+                        <div class="activity-card-content">
+                            <span class="activity-card-info">Fort de pomègues</span>
+                        </div>
+                    </article>
+                </a>
+                <a href="#" class="activity-article">
+                    <article class="activity-card">
+                        <img class="activity-pic" src="images/activites/kilyan-sockalingum.jpg"
+                            title="Parc national des Calanques"
+                            alt="Vue aérienne des falaises et de la mer du Parc National des Calanques, où les falaises escarpées rencontrent les eaux bleues de la Méditerranée">
+                        <div class="activity-card-content">
+                            <span class="activity-card-info">Parc national des Calanques</span>
+                        </div>
+                    </article>
+                </a>
+                <a href="#" class="activity-article">
+                    <article class="activity-card">
+                        <img class="activity-pic" src="images/activites/florian-wehde.jpg"
+                            title="Notre-Dame-de-la-Garde"
+                            alt="Vue contre-plongée avec Notre-Dame-de-la-Garde dominant la colline, au-dessus des toits en premier plan">
+                        <div class="activity-card-content">
+                            <span class="activity-card-info">Notre-Dame-de-la-Garde</span>
+                        </div>
+                    </article>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-------------------------------- Site FOOTER ------------------------------>
+    <footer class="container">
+
+        <!------------------------- Site Footer - CONTENT ------------------------>
+
+        <div class="footer-content">
+
+            <!------------------------- -Site Footer - MENU----------------------->
+
+            <nav class="footer-menu">
+
+                <!------------------------- Site Footer - LIST------------------------>
+
+                <div class="footer-menu--list">
+                    <span class="footer-menu--title">A propos</span>
+                    <a class="footer-menu--link" href="#">Fontionnement du site</a>
+                    <a class="footer-menu--link" href="#">Conditions générales</a>
+                    <a class="footer-menu--link" href="#">Données et confidentialité</a>
                 </div>
 
-                <div class="site-footer--info">
-                    <h3>Assistance</h3>
-                    <a>Centre d'aide</a>
-                    <a>Nous contacter</a>
-                </div>       
-            </div>
-        </footer>         
-    </main>
+                <!------------------------- Site Footer - LIST------------------------>
+
+                <div class="footer-menu--list">
+                    <span class="footer-menu--title">Nos hébergements</span>
+                    <a class="footer-menu--link" href="#">Charte qualité</a>
+                    <a class="footer-menu--link" href="#">Proposer votre hôtel</a>
+                </div>
+
+                <!------------------------- Site Footer - LIST------------------------>
+
+                <div class="footer-menu--list">
+                    <span class="footer-menu--title">Assistance</span>
+                    <a class="footer-menu--link" href="#">Centre d'aide</a>
+                    <a class="footer-menu--link" href="#">Nous contacter</a>
+                </div>
+            </nav>
+        </div>
+    </footer>
 </body>
