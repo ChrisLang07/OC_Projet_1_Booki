@@ -99,6 +99,10 @@
     border-radius: 0 15px 15px 0;
 }
 
+.site-header--magnifying-glass {
+    display: none;
+}
+
 /* Site Header - FILTERS */
 
 .site-header--filters {
@@ -153,7 +157,14 @@
     margin: 35px 50px;
 }
 
-/* Site Section- INFO */
+/* Site Section- Header-INFO */
+
+.section-header--info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
 
 .ico-info {
     display: inline-block;
@@ -473,14 +484,16 @@
     .site-header--topbar-link {
         margin: 0;
         padding: 0;
-        
+
     }
 
     .site-header--topbar-link:hover {
-        
+        border-top: 2px solid transparent;
+        text-decoration: underline solid 2px;
+        text-underline-offset: 1rem;
     }
 
-
+     
     /* Site Header - SEARCH-GROUP */
 
     .site-header--search-headline {
@@ -498,7 +511,7 @@
 
     .site-header--search-form {
         max-width: 335px;
-        width: 93%;
+        width: 92%;
         margin: 0 20px;
 
     }
@@ -516,14 +529,16 @@
         display: none;
     }
 
-    .site-header--button-glass {
-        visibility: visible;
+    .site-header--magnifying-glass {
+        display: inline-block;
         width: 15%;
-        border-radius: 15px;
-        border: none;
         color: #FFFFFF;
         background-color: #0065FC;
+        border: none;
+        border-radius: 15px;
     }
+
+
 
     /* Site Header - FILTERS */
 
@@ -539,11 +554,15 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
+        width: 100%;
+        max-width: 335px;
 
     }
 
     .site-header--filters-tag {
-        padding: 12px 4px;
+        display: flex;
+        justify-content: flex-start;
+        padding: 12px 15px;
     }
 
     .site-header--filters-tag-name {
@@ -558,6 +577,19 @@
         max-width: 375px;
         margin: 20px;
     }
+
+    /* Site Section- Header-INFO */
+
+    .section-header--info {
+        display: flex;
+        align-items: center;
+    }
+
+    .text-info {
+        display: inline-block;
+        width: 87%;
+    }
+
 
     /* Site Section - CONTENT */
 
