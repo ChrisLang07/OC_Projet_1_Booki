@@ -89,6 +89,7 @@
     font-weight: 700;
     width: 50%;
     padding-left: 10px;
+    text-align: center;
 }
 
 .site-header--button {
@@ -202,13 +203,12 @@
 /* Site Section - OFFERS */
 
 .section-content--offers {
-    width: 68%;
-    padding: 30px;
     display: flex;
     flex-direction: column;
     gap: 30px;
     border-radius: 15px;
-    ;
+    width: 68%;
+    padding: 30px;
     background-color: #F2F2F2;
 }
 
