@@ -471,7 +471,7 @@
     .site-header--filters-title,
     .site-header--filters-tag,
     .footer-menu--title {
-        font-size: calc(16px + (18 - 16) * ((100vw - 1025px) / (1900 - 1025)));
+        font-size: calc(15px + (16 - 15) * ((100vw - 1025px) / (1900 - 1025)));
     }
 
 
@@ -496,7 +496,12 @@
     }
 
     .activity-card-content {
-        height: calc(5vh + (30 - 5) * ((100vw - 1025px) / (1900 - 1025)));
+        height: calc(3vh + (8 - 3) * ((100vw - 1025px) / (1900 - 1025)));
+        padding: 10px 0;
+    }
+
+    .activity-card-info {
+        margin-left: 10px;
     }
 
 }
@@ -512,6 +517,10 @@
         max-width: 1024px;
     }
 
+    #search {
+        font-size: 1rem;
+    }
+
     /* Site Header - FILTER */
 
     .site-header--filters {
@@ -523,6 +532,10 @@
 
     .site-header--filters-tag {
         padding: 12px;
+    }
+
+    .site-header--filters-tag-name {
+        font-size: 1rem;
     }
 
     /* Site Section - CONTENT */
@@ -566,6 +579,32 @@
 
     .col-card-content {
         width: 66.66%;
+    }
+
+    .card-title {
+        font-size: 0.9rem;
+    }
+
+
+    /* Site Section - ACTIVITY */
+
+    .activity-card-content {
+        height: calc(3vh + (10 - 3) * ((100vw - 769px) / (1024 - 769)));
+        padding: 10px 0;
+    }
+
+    /* Site Section - Activity - CARD */
+
+    .activity-card-info {
+        font-size: 0.9rem;
+    }
+
+    .footer-menu--title {
+        font-size: 1rem;
+    }
+
+    .footer-menu--link {
+        font-size: 0.9rem;
     }
 }
 
@@ -760,11 +799,10 @@
 
     .activity-pic {
         width: 100%;
-        height: 11vh;
     }
 
     .activity-card-content {
-        height: 4.6vh;
+        height: calc(3vh + (4 - 3) * ((100vw - 320px) / (768 - 320)));
     }
 
     /* Site FOOTER */
