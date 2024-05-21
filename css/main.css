@@ -465,12 +465,7 @@
     .activity-card-info {
         padding: 10px 19px;
     }
-
-
-
-  
-
-}
+} 
 
 
 
@@ -713,10 +708,15 @@
         padding: 20px;
     }
 
+    .activity--group {
+        width: 100%;
+    }
+
     /* Site Main Content - ACTIVITY -CARDS */
 
     .activity--cards {
         flex-direction: column;
+        margin: 0;
     }
 
     .activity-card--link {
