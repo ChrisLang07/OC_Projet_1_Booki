@@ -173,7 +173,8 @@
 }
 
 .offers--info {
-    margin: 0 0 35px;
+    margin: 35px auto;
+    width: 93%;
 }
 
 .ico-info {
@@ -280,11 +281,12 @@
 .sponsored--group {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 30px;
     padding: 30px;
     border-radius: 15px;
     background-color: #F2F2F2;
+    height: 91%;
 }
 
 /* Site Main Content - SPONSORED-TITLE */
@@ -449,6 +451,18 @@
 
     /* Site Main Content - ACTIVITY -CARDS */
 
+    .card-info {
+        padding: calc(0px + (16 - 0) * ((100vw - 1025px) / (1900 - 1025)));
+    }
+
+    .card-pic{
+        width: calc(100% - 10px);
+    }
+
+    .card-title, .card-price {
+        font-size: calc(13px + (16 - 13) * ((100vw - 1025px) / (1900 - 1025)));
+    }
+
     .activity-card--link {
         height: 439px;
     }
@@ -465,6 +479,8 @@
     .activity-card-info {
         padding: 10px 19px;
     }
+
+    
 } 
 
 
