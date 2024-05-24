@@ -234,7 +234,7 @@
 
 .card-pic {
     height: 124px;
-    width: 95%;
+    width: calc(100% - 10px);
     object-fit: cover;
     border-radius: 20px 20px 0 0;
     border: 5px solid rgba(255, 255, 255, 1)
@@ -286,7 +286,6 @@
     padding: 30px;
     border-radius: 15px;
     background-color: #F2F2F2;
-    height: 91%;
 }
 
 /* Site Main Content - SPONSORED-TITLE */
@@ -452,7 +451,7 @@
     /* Site Main Content - ACTIVITY -CARDS */
 
     .card-info {
-        padding: calc(0px + (16 - 0) * ((100vw - 1025px) / (1900 - 1025)));
+        padding: 0 calc(0px + (16 - 0) * ((100vw - 1025px) / (1900 - 1025)));
     }
 
     .card-pic{
@@ -461,7 +460,7 @@
 
     .card-title, .card-price {
         font-size: calc(13px + (16 - 13) * ((100vw - 1025px) / (1900 - 1025)));
-    }
+    }*/
 
     .activity-card--link {
         height: 439px;
@@ -521,8 +520,12 @@
         margin: auto;
     }
 
+    .article {
+        height: 220px;
+    }
+
     .card-info {
-        height: 4vh;
+       /* height: 4vh;*/
         padding: 5px;
     }
 
@@ -540,16 +543,21 @@
     }
 
     .activity-pic {
-        height: 10vh;
+        height: 25vh;
         object-fit: cover;
     }
 
     .activity-card-info {
-        height: 3vh;
+        height: 5vh;
         padding: calc(5px + (20 - 4) * ((100vw - 1025px) / (1900 - 1025))) 19px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+    }
+
+    .activity-card-title {
+        font-size: calc(14px + (16 - 14) * ((100vw - 768px) / (1024 - 768)));
+
     }
 
     /* Site Footer - MENU */
@@ -714,6 +722,14 @@
         width: 100%;
     }
 
+    .article {
+        height: 220px;
+    }
+
+    .card-info {
+        padding: 0 15px;
+    }
+
     .card-pic {
         width: calc(100% - 10px);
     }
@@ -747,6 +763,11 @@
 
     .activity-card-info {
         padding: 0 19px;
+    }
+
+    .activity-card-title {
+        font-size: 0.9rem
+
     }
 
     /* Site Footer - CONTENT */
