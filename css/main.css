@@ -8,19 +8,14 @@
 
 /* Site HEADER */
 
-/* Site Header - TOPBAR / MENU */
-
-.site-header {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-}
+/* Site Header - TOPBAR */
 
 .site-header--topbar {
     display: flex;
     justify-content: space-between;
 }
+
+/* Site Header - TOPBAR-LOGO */
 
 .site-header--topbar-logo {
     width: 61px;
@@ -28,10 +23,14 @@
     padding: 30px 50px;
 }
 
+/* Site Header - TOPBAR-MENU */
+
 .site-header--topbar-menu {
     padding: 0 50px;
     margin-top: 20px;
 }
+
+/* Site Header - TOPBAR-LINK */
 
 .site-header--topbar-link {
     margin-left: 68px;
@@ -58,11 +57,15 @@
     gap: 35px;
 }
 
+/* Site Header - SEARCH-HEADLINE */
+
 .site-header--search-headline {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
+
+/* Site Header - SEARCH-TITLE */
 
 .site-header--search-title {
     font-size: 1.3rem;
@@ -71,14 +74,16 @@
 
 /* Site Header - SEARCH-BAR */
 
-.site-header--search-form {
+.site-header--search-bar {
     width: 377px;
     display: flex;
     border: 1px solid #F2F2F2;
     border-radius: 15px;
 }
 
-.site-header--fa-location {
+/* Site Header - SEARCH-GPS */
+
+.site-header--search-gps {
     width: 50px;
     text-align: center;
     line-height: 49px;
@@ -94,6 +99,8 @@
     padding-left: 10px;
     text-align: center;
 }
+
+/* Site Header - SEARCH-BUTTON */
 
 .site-header--button {
     width: 132px;
@@ -124,7 +131,7 @@
     font-weight: 700;
 }
 
-/* Site Header - Filters-TAGS */
+/* Site Header - Filters-ALL-TAGS */
 
 .site-header--filters-all-tags {
     display: flex;
@@ -202,35 +209,46 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding: 30px;
+    padding: 10px 30px;
+    min-height:100%;
     border-radius: 15px;
     background-color: #F2F2F2;
 }
 
-/* Site Main Content - OFFERS-CARDS */
+/* Site Main Content - OFFERS--ALL-CARDS */
 
-.offers--cards {
+.offers--all-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 30px;
 }
 
-.offers--link {
-    text-decoration: none;
-    width: 29%;
-}
+/* Site Main Content - HEADLINE--TITLE */
 
 .headline--title {
     font-size: 1.3rem;
     font-weight: 700;
 }
 
-.article {
+/* Site Main Content - OFFERS--LINK */
+
+.offers--link {
+    text-decoration: none;
+    width: 29%;
+    display: inline-flex;
+}
+
+/* Site Main Content - OFFERS--CARDS */
+
+.offers-card {
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 1);
+    flex-grow: 1;
 }
+
+/* Site Main Content - OFFERS--PIC */
 
 .card-pic {
     height: 124px;
@@ -240,6 +258,8 @@
     border: 5px solid rgba(255, 255, 255, 1)
 }
 
+/* Site Main Content - OFFERS--CARD-INFO */
+
 .card-info {
     display: flex;
     flex-direction: column;
@@ -247,12 +267,16 @@
     padding: 0 15px;
 }
 
+/* Site Main Content - OFFERS--CARD-TITLE */
+
 .card-title {
     font-size: 1rem;
     font-weight: 700;
     margin: 0;
     color: rgba(0, 0, 0, 1)
 }
+
+/* Site Main Content - OFFERS--CARD-PRICE */
 
 .card-price {
     font-size: 0.9rem;
@@ -283,7 +307,8 @@
     flex-direction: column;
     justify-content: space-around;
     gap: 30px;
-    padding: 30px;
+    min-height: 100%;
+    padding: 10px 30px;
     border-radius: 15px;
     background-color: #F2F2F2;
 }
@@ -295,8 +320,14 @@
     justify-content: space-between;
 }
 
-.headline--title {
+.sponsored-headline--title {
     margin: 0;
+}
+
+.sponsored-headline--title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    
 }
 
 .fa-chart-line {
@@ -362,9 +393,10 @@
     margin: auto;
 }
 
-.headline--title {
+#rent {
     font-size: 1.3rem;
     font-weight: 700;
+    margin-top: 30px;
 }
 
 /* Site Main Content - ACTIVITY -CARDS */
@@ -440,51 +472,6 @@
 }
 
 /****** Media queries ***********/
-
-
-
-
-/* Desktop devices (PC, more than 1024px) */
-
-@media screen and (min-width: 1025px) {
-
-    /* Site Main Content - ACTIVITY -CARDS */
-
-    .card-info {
-        padding: 0 calc(0px + (16 - 0) * ((100vw - 1025px) / (1900 - 1025)));
-    }
-
-    .card-pic{
-        width: calc(100% - 10px);
-    }
-
-    .card-title, .card-price {
-        font-size: calc(13px + (16 - 13) * ((100vw - 1025px) / (1900 - 1025)));
-    }*/
-
-    .activity-card--link {
-        height: 439px;
-    }
-
-    .activity-card {
-        height: 100%;
-    }
-
-    .activity-pic {
-        height: 86%;
-        object-fit: cover;
-    }
-
-    .activity-card-info {
-        padding: 10px 19px;
-    }
-
-    
-} 
-
-
-
-
 
 /* Medium devices (Tablets, less than 1024px) */
 
@@ -624,14 +611,18 @@
         width: 100%;
     }
 
+    .site-header--search-title {
+        margin-top: 30px;
+    }
+
     /* Site Header - SEARCH-BAR */
 
-    .site-header--search-form {
+    .site-header--search-bar {
         margin: auto;
         width: 100%;
     }
 
-    .site-header--fa-location {
+    .site-header--search-gps{
         width: 70px;
     }
 
@@ -662,15 +653,21 @@
     /* Site Header - Filters-TAGS */
 
     .site-header--filters-all-tags {
-        display: grid;
+        /*display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        width: 100%;
+        width: 100%;*/
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;             
     }
 
     .site-header--filters-tag {
         font-size: 0.9rem;
         padding: 12px 8px;
+        width: 42%;
+        flex-grow: 1;
     }
 
     /* Site Header - FILTERS - INFO  */
@@ -697,6 +694,12 @@
 
     .sponsored--group {
         padding: 30px 20px;
+    }
+
+    /* Site Main Content - SPONSORED-TITLE */
+
+    .sponsored-headline--title {
+        padding: 0;
     }
 
     /* Site Main Content - OFFERS */

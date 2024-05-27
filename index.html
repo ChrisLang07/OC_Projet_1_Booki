@@ -19,16 +19,18 @@
     <!--                         Site - HEADER                          -->
     <!-- ************************************************************** -->
     <div class="container">
-        <header class="site-header">
-
-            <!-- Site Header - TOPBAR / MENU  -->
-
+        <header>
+            <!-- Site Header - TOPBAR -->
             <div class="site-header--topbar">
+                <!-- Site Header - TOPBAR-TITLE -->
                 <h1 class="site-header--topbar-title">
+                    <!-- Site Header - TOPBAR-LOGO -->
                     <img class="site-header--topbar-logo" src="./images/logo/Booki.png" alt="Booki">
                     <span hidden>Booki</span>
                 </h1>
+                <!-- Site Header - TOPBAR-MENU -->
                 <nav class="site-header--topbar-menu">
+                    <!-- Site Header - TOPBAR-LINK -->
                     <a class="site-header--topbar-link" href="#rent">Hébergements</a>
                     <a class="site-header--topbar-link" href="#activity">Activités</a>
                 </nav>
@@ -36,22 +38,25 @@
 
             <!-- Site Header - SEARCH-GROUP -->
             <div class="site-header--search-group">
+                <!-- Site Header - SEARCH-HEADLINE -->
                 <div class="site-header--search-headline">
+                    <!-- Site Header - SEARCH-TITLE -->
                     <span class="site-header--search-title">Trouver votre hébergement pour des vacances de
                         rêve</span><br>
                     <span class="site-header--text-info">En plein centre ville ou en pleine nature</span>
                 </div>
 
                 <!--  Site Header - SEARCH-BAR -->
-
-                <form class="site-header--search-form">
-                    <div class="site-header--fa-location">
+                <form class="site-header--search-bar">
+                    <!--  Site Header - SEARCH-GPS -->
+                    <div class="site-header--search-gps">
                         <i class="fa-solid fa-location-dot"></i>
                     </div>
 
                     <label for="search" hidden>Recherche</label>
                     <input type="search" id="search" name="search" placeholder="Rechercher une ville">
-
+                    
+                    <!-- Site Header - SEARCH-BUTTON -->
                     <button class="site-header--button" type="submit">
                         <span>Rechercher</span>
                     </button>
@@ -64,40 +69,33 @@
                 <!--                      Site Header - FILTERS                     -->
                 <!-- ************************************************************** -->
 
-                <!--  Site Header - Filters-TITLE  -->
-
+                <!-- Site Header - Filters -->
                 <div class="site-header--filters">
-
+                    <!--  Site Header - Filters-TITLE -->
                     <div class="site-header--filters-title">Filtres</div>
 
-                    <!--  Site Header - Filters-TAGS  -->
-
+                    <!-- Site Header - Filters-ALL-TAGS -->
                     <div class="site-header--filters-all-tags">
 
-                        <!-- * Site Header - TAG : ECONOMY  -->
-
+                        <!-- Site Header - TAG : ECONOMY -->
                         <a class="site-header--filters-tag" href="#">
                             <i class="fa-solid fa-money-bill-wave"></i>
                             <span class="site-header--filters-tag-name">Économique</span>
                         </a>
 
-                        <!--  Site Header - TAG : FAMILY  -->
-
+                        <!-- Site Header - TAG : FAMILY -->
                         <a class="site-header--filters-tag" href="#">
                             <i class="fa-solid fa-person"></i>
                             <span class="site-header--filters-tag-name">Familial</span>
                         </a>
 
-                        <!--  Site Header - TAG : ROMANTIC  -->
-
+                        <!-- Site Header - TAG : ROMANTIC -->
                         <a class="site-header--filters-tag" href="#">
                             <i class="fa-solid fa-heart"></i>
                             <span class="site-header--filters-tag-name">Romantique</span>
                         </a>
 
-                        <!--  Site Header - TAG : BEST DEALS  -->
-
-
+                        <!-- Site Header - TAG : BEST DEALS -->
                         <a class="site-header--filters-tag" href="#">
                             <i class="fa-solid fa-fire"></i>
                             <span class="site-header--filters-tag-name">Nos pépites</span>
@@ -106,17 +104,16 @@
                 </div>
             </div>
         </header>
-    </div>
 
-    <!-- ************************************************************** -->
-    <!--                   Site - MAIN CONTENT                          -->
-    <!-- ************************************************************** -->
 
-    <div class="container">
-        <main class="site-content-main">
+        <!-- ************************************************************** -->
+        <!--                   Site - MAIN CONTENT                          -->
+        <!-- ************************************************************** -->
+
+
+        <main>
 
             <!--  Site Main Content - INFO  -->
-
             <div class="offers--info">
                 <span class="ico-info">
                     <i class="fa-solid fa-info"></i>
@@ -124,103 +121,142 @@
                 <span class="text-info">Plus de 500 logements disponibles dans cette ville</span>
             </div>
 
-            <!--  Site Main Content - ALL  -->
-
+            <!-- Site Main Content - ALL -->
             <div class="site-content--all">
 
-                <!--  Site Main Content - OFFERS  -->
-
+                <!-- Site Main Content - OFFERS -->
                 <div class="site-content--offers">
-                    
 
-                    <!--  Site Main Content - OFFERS-GROUP  -->
-
+                    <!-- Site Main Content - OFFERS-GROUP -->
                     <section class="offers--group">
+                        <!-- Site Main Content - OFFERS--HEADLINE -->
                         <div class="offers--headline">
-                            <h2 id="rent" class="headline--title">Hébergement à Marseille</h2>
+                            <!-- Site Main Content - HEADLINE--TITLE -->
+                            <h2 id="rent" class="offers-headline--title">Hébergement à Marseille</h2>
                         </div>
 
-                        <!--  Site Main Content - OFFERS-CARDS  -->
-
-                        <div class="offers--cards">
+                        <!-- Site Main Content - OFFERS--ALL-CARDS -->
+                        <div class="offers--all-cards">
+                            <!-- Site Main Content - OFFERS--LINK -->
                             <a href="#" class="offers--link">
-                                <article class="article">
+                                <!-- Site Main Content - OFFERS--CARDS -->
+                                <article class="offers-card">
+                                    <!-- Site Main Content - OFFERS--CARD-PIC -->
                                     <img class="card-pic" src="images/hebergements/fred-kleber.jpg"
                                         title="Hôtel du port"
                                         alt="Chambre lumineuse aux murs gris clair, fenêtre et voiles blancs, deux lits simples habillés de draps marrons, avec des coussins de décoration au style industriel">
+                                        <!-- Site Main Content - OFFERS--CARD-INFO -->
                                     <div class="card-info">
+                                        <!-- Site Main Content - OFFERS--CARD-TITLE -->
                                         <h3 class="card-title">Hôtel du port</h3>
+                                        <!-- Site Main Content - OFFERS--CARD-PRICE -->
                                         <span class="card-price">Nuit à partir de <strong>52&euro;</strong></span>
+                                        <!-- Site Main Content - OFFERS--CARD-ICONS -->
                                         <span class="card-icons">
                                             <i class="fa-solid fa-star"></i>
                                         </span>
                                     </div>
                                 </article>
                             </a>
+                            <!-- Site Main Content - OFFERS--LINK -->
                             <a href="#" class="offers--link">
-                                <article class="article">
+                                <!-- Site Main Content - OFFERS--CARDS -->
+                                <article class="offers-card">
+                                    <!-- Site Main Content - OFFERS--CARD-PIC -->
                                     <img class="card-pic" src="images/hebergements/febrian-zakaria.jpg"
                                         title="Hôtel Chez Amina"
                                         alt="Chambre lumineuse avec un lit simple aux draps blancs, avec fenêtre et un bureau équipé d'une lampe, surplombé par une télévision murale">
+                                        <!-- Site Main Content - OFFERS--CARD-INFO -->
                                     <div class="card-info">
+                                        <!-- Site Main Content - OFFERS--CARD-TITLE -->
                                         <h3 class="card-title">Hôtel Chez Amina</h3>
+                                        <!-- Site Main Content - OFFERS--CARD-PRICE -->
                                         <span class="card-price">Nuit à partir de <strong>96&euro;</strong></span>
+                                        <!-- Site Main Content - OFFERS--CARD-ICONS -->
                                         <span class="card-icons">
                                             <i class="fa-solid fa-star"></i>
                                         </span>
                                     </div>
                                 </article>
                             </a>
+                            <!-- Site Main Content - OFFERS--LINK -->
                             <a href="#" class="offers--link">
-                                <article class="article">
+                                <!-- Site Main Content - OFFERS--CARDS -->
+                                <article class="offers-card">
+                                    <!-- Site Main Content - OFFERS--CARD-PIC -->
                                     <img class="card-pic" src="images/hebergements/reisetopia.jpg"
                                         title="Hôtel Les mouettes"
                                         alt="Chambre avec un lit double, une tablette et des appliques murales, ainsi qu'un placard aux portes coulissantes habillées de miroirs">
+                                        <!-- Site Main Content - OFFERS--CARD-INFO -->
                                     <div class="card-info">
+                                        <!-- Site Main Content - OFFERS--CARD-TITLE  -->
                                         <h3 class="card-title">Hôtel Les mouettes</h3>
+                                        <!-- Site Main Content - OFFERS--CARD-PRICE -->
                                         <span class="card-price">Nuit à partir de <strong>76&euro;</strong></span>
+                                        <!-- Site Main Content - OFFERS--CARD-ICONS -->
                                         <span class="card-icons">
                                             <i class="fa-solid fa-star"></i>
                                         </span>
                                     </div>
                                 </article>
                             </a>
+                            <!-- Site Main Content - OFFERS--LINK -->
                             <a href="#" class="offers--link">
-                                <article class="article">
+                                <!-- Site Main Content - OFFERS--CARDS -->
+                                <article class="offers-card">
+                                    <!-- Site Main Content - OFFERS--CARD-PIC -->
                                     <img class="card-pic" src="images/hebergements/annie-spratt.jpg"
                                         title="Hôtel de la mer"
                                         alt="Chambre lumineuse avec un lit double encadré par deux tables de chevet avec lampes, surmonté d'un grand tableau représentant la mer">
+                                        <!-- Site Main Content - OFFERS--CARD-INFO -->
                                     <div class="card-info">
+                                        <!-- Site Main Content - OFFERS--CARD-TITLE  -->
                                         <h3 class="card-title">Hôtel de la mer</h3>
+                                        <!-- Site Main Content - OFFERS--CARD-PRICE -->
                                         <span class="card-price">Nuit à partir de <strong>46&euro;</strong></span>
+                                        <!-- Site Main Content - OFFERS--CARD-ICONS -->
                                         <span class="card-icons">
                                             <i class="fa-solid fa-star"></i>
                                         </span>
                                     </div>
                                 </article>
                             </a>
+                            <!-- Site Main Content - OFFERS--LINK -->
                             <a href="#" class="offers--link">
-                                <article class="article">
+                                <!-- Site Main Content - OFFERS--CARDS -->
+                                <article class="offers-card">
+                                    <!-- Site Main Content - OFFERS--CARD-PIC -->
                                     <img class="card-pic" src="images/hebergements/marcus-loke.jpg"
                                         title="Auberge de La Canebière"
                                         alt="Chambres en centre ville avec deux lits superposés et fenêtres donnant sur la rue">
+                                        <!-- Site Main Content - OFFERS--CARD-INFO -->
                                     <div class="card-info">
+                                        <!-- Site Main Content - OFFERS--CARD-TITLE -->
                                         <h3 class="card-title">Auberge La Canebière</h3>
+                                        <!-- Site Main Content - OFFERS--CARD-PRICE -->
                                         <span class="card-price">Nuit à partir de <strong>25&euro;</strong></span>
+                                        <!-- Site Main Content - OFFERS--CARD-ICONS -->
                                         <span class="card-icons">
                                             <i class="fa-solid fa-star"></i>
                                         </span>
                                     </div>
                                 </article>
                             </a>
+                            <!-- Site Main Content - OFFERS--LINK -->
                             <a href="#" class="offers--link">
-                                <article class="article">
+                                <!-- Site Main Content - OFFERS--CARDS -->
+                                <article class="offers-card">
+                                    <!-- Site Main Content - OFFERS--CARD-PIC -->
                                     <img class="card-pic" src="images/hebergements/nicate-lee.jpg"
                                         title="Auberge Le Panier"
                                         alt="Chambre avec lits superposés en bois décoratif, offrant 4 places, avec des rideaux pour plus de discrétion">
+                                        <!-- Site Main Content - OFFERS--CARD-INFO -->
                                     <div class="card-info">
+                                        <!-- Site Main Content - OFFERS--CARD-TITLE -->
                                         <h3 class="card-title">Auberge Le Panier </h3>
+                                        <!-- Site Main Content - OFFERS--CARD-PRICE -->
                                         <span class="card-price">Nuit à partir de <strong>23&euro;</strong></span>
+                                        <!-- Site Main Content - OFFERS--CARD-ICONS -->
                                         <span class="card-icons">
                                             <i class="fa-solid fa-star"></i>
                                         </span>
@@ -231,30 +267,25 @@
                         <div class="offers--headline">
                             <span class="offers--more">Afficher plus</span>
                         </div>
-                    </section>
+                    </section> <!-- END .offers--group -->
                 </div>
 
                 <!--  Site Main Content - SPONSORED  -->
-
                 <div class="site-content--sponsored">
 
                     <!--  Site Main Content - SPONSORED-GROUP  -->
-
                     <section class="sponsored--group">
                         <div class="sponsored--headline">
 
                             <!--  Site Main Content - SPONSORED-TITLE  -->
-
-                            <h2 class="headline--title">Les plus populaires</h2>
+                            <h2 class="sponsored-headline--title">Les plus populaires</h2>
                             <span><i class="fa-solid fa-chart-line"></i></span>
                         </div>
 
                         <!--  Site Main Content - SPONSORED-CARDS  -->
-
                         <div class="sponsored--cards">
                             <a href="#" class="col-card--link">
                                 <article class="col-article">
-
                                     <img class="col-pic" src="images/hebergements/emile-guillemot.jpg"
                                         title="Hôtel Le soleil du matin"
                                         alt="Chambre avec lit drapé de blanc, miroir mural et de plafond, dominée par des tons verts apaisants">
@@ -269,6 +300,7 @@
                                     </div>
                                 </article>
                             </a>
+
                             <a href="#" class="col-card--link">
                                 <article class="col-article">
                                     <img class="col-pic" src="images/hebergements/aw-creative.jpg"
@@ -285,41 +317,38 @@
                                     </div>
                                 </article>
                             </a>
-                            <a href="#" class="col-card--link">
-                                <article class="col-article">
-                                    <img class="col-pic" src="images/hebergements/reisetopia.jpg"
-                                        title="Hôtel Bleu et Blanc"
-                                        alt="Chambre avec un lit double, une tablette et des appliques murales, ainsi qu'un placard aux portes coulissantes habillées de miroirs">
 
-                                    <div class="col-card--info">
-                                        <h3 class="card-title">Hôtel Bleu et Blanc<br>
-                                            <span class="card-price">Nuit à partir de <strong>68&euro;</strong></span>
-                                        </h3>
-                                        <span class="col-card--icon">
-                                            <i class="fa-solid fa-star"></i>
-                                        </span>
-                                    </div>
-                                </article>
+                            <article class="col-article">
+                                <img class="col-pic" src="images/hebergements/reisetopia.jpg"
+                                    title="Hôtel Bleu et Blanc"
+                                    alt="Chambre avec un lit double, une tablette et des appliques murales, ainsi qu'un placard aux portes coulissantes habillées de miroirs">
+
+                                <div class="col-card--info">
+                                    <h3 class="card-title">Hôtel Bleu et Blanc<br>
+                                        <span class="card-price">Nuit à partir de <strong>68&euro;</strong></span>
+                                    </h3>
+                                    <span class="col-card--icon">
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                </div>
+                            </article>
                             </a>
                         </div>
-                    </section>
+                    </section> <!-- END .sponsored--group -->
                 </div>
             </div>
             <div class="site-content--all-activity">
 
                 <!--  Site Main Content - ACTIVITY  -->
-
                 <div class="site-content--activity">
 
                     <!--  Site Main Content - ACTIVITY-GROUP  -->
-
                     <section class="activity--group">
                         <div class="activity--headline">
                             <h2 id="activity" class="headline--title">Activité à Marseille</h2>
                         </div>
 
                         <!--  Site Main Content - ACTIVITY -CARDS  -->
-
                         <div class="activity--cards">
                             <a class="activity-card--link" href="#">
                                 <article class="activity-card">
@@ -333,6 +362,7 @@
 
                                 </article>
                             </a>
+
                             <a class="activity-card--link" href="#">
                                 <article class="activity-card">
 
@@ -345,6 +375,7 @@
 
                                 </article>
                             </a>
+
                             <a class="activity-card--link" href="#">
                                 <article class="activity-card">
 
@@ -357,6 +388,7 @@
 
                                 </article>
                             </a>
+
                             <a class="activity-card--link" href="#">
                                 <article class="activity-card">
 
@@ -370,25 +402,23 @@
                                 </article>
                             </a>
                         </div>
-                    </section>
+                    </section> <!-- END .activity--group -->
                 </div>
             </div>
             <!-- ************************************************************** -->
             <!--                   Site - FOOTER                                -->
             <!-- ************************************************************** -->
         </main>
-        <footer class="container">
+
+        <footer>
 
             <!--  Site Footer - CONTENT  -->
-
             <div class="footer-content">
 
                 <!--  Site Footer - MENU  -->
-
                 <nav class="footer-menu">
 
                     <!--  Site Footer - LIST  -->
-
                     <div class="footer-menu--list">
                         <span class="footer-menu--title">A propos</span>
                         <a class="footer-menu--link" href="#">Fontionnement du site</a>
@@ -397,7 +427,6 @@
                     </div>
 
                     <!--  Site Footer - LIST  -->
-
                     <div class="footer-menu--list">
                         <span class="footer-menu--title">Nos hébergements</span>
                         <a class="footer-menu--link" href="#">Charte qualité</a>
@@ -405,7 +434,6 @@
                     </div>
 
                     <!--  Site Footer - LIST  -->
-
                     <div class="footer-menu--list">
                         <span class="footer-menu--title">Assistance</span>
                         <a class="footer-menu--link" href="#">Centre d'aide</a>
