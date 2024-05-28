@@ -408,6 +408,7 @@
 }
 
 .activity-card--link {
+    display:flex;
     width: 23%;
     text-decoration: none;
     color: #000000;
@@ -416,6 +417,7 @@
 .activity-card {
     border-radius: 20px;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
 }
 
 .activity-pic {
@@ -666,7 +668,7 @@
     .site-header--filters-tag {
         font-size: 0.9rem;
         padding: 12px 8px;
-        width: 42%;
+        width: 40%;
         flex-grow: 1;
     }
 
