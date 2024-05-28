@@ -525,6 +525,12 @@
         margin: auto;
     }
 
+    /* Site Main Content - SPONSORED-GROUP */
+
+    .sponsored--group {
+        padding:30px;
+    }
+
     /* Site Main Content - ACTIVITY -CARDS */
 
     .activity-card--link {
@@ -532,7 +538,7 @@
     }
 
     .activity-pic {
-        height: 25vh;
+        height: 80%;
         object-fit: cover;
     }
 
