@@ -210,7 +210,7 @@
     flex-direction: column;
     gap: 30px;
     padding: 10px 30px;
-    min-height:100%;
+    min-height: 100%;
     border-radius: 15px;
     background-color: #F2F2F2;
 }
@@ -327,7 +327,7 @@
 .sponsored-headline--title {
     font-size: 1.3rem;
     font-weight: 700;
-    
+
 }
 
 .fa-chart-line {
@@ -408,7 +408,7 @@
 }
 
 .activity-card--link {
-    display:flex;
+    display: flex;
     width: 23%;
     text-decoration: none;
     color: #000000;
@@ -423,6 +423,7 @@
 .activity-pic {
     height: 380px;
     width: 100%;
+    object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
@@ -514,7 +515,7 @@
     }
 
     .card-info {
-       /* height: 4vh;*/
+        /* height: 4vh;*/
         padding: 5px;
     }
 
@@ -528,31 +529,20 @@
     /* Site Main Content - SPONSORED-GROUP */
 
     .sponsored--group {
-        padding:30px;
+        padding: 30px;
     }
 
     /* Site Main Content - ACTIVITY -CARDS */
 
-    .activity-card--link {
-        height: 270px;
-    }
-
     .activity-pic {
-        height: 80%;
+        height: 200px;
         object-fit: cover;
     }
 
     .activity-card-info {
-        height: 5vh;
-        padding: calc(5px + (20 - 4) * ((100vw - 1025px) / (1900 - 1025))) 19px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-    }
-
-    .activity-card-title {
-        font-size: calc(14px + (16 - 14) * ((100vw - 768px) / (1024 - 768)));
-
     }
 
     /* Site Footer - MENU */
@@ -630,7 +620,7 @@
         width: 100%;
     }
 
-    .site-header--search-gps{
+    .site-header--search-gps {
         width: 70px;
     }
 
@@ -638,7 +628,7 @@
         width: 100%;
     }
 
-    .site-header--button span {
+    .site-header--search-text {
         display: none;
     }
 
@@ -656,14 +646,10 @@
     /* Site Header - Filters-TAGS */
 
     .site-header--filters-all-tags {
-        /*display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        width: 100%;*/
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        gap: 10px;             
+        gap: 10px;
     }
 
     .site-header--filters-tag {
@@ -759,21 +745,14 @@
 
     .activity-card--link {
         width: 100%;
-        height: 200px;
     }
 
     .activity-pic {
         height: 141px;
-        object-fit: cover;
-    }
-
-    .activity-card-info {
-        padding: 0 19px;
     }
 
     .activity-card-title {
         font-size: 0.9rem
-
     }
 
     /* Site Footer - CONTENT */
