@@ -112,7 +112,7 @@
     border-radius: 0 15px 15px 0;
 }
 
-.site-header--magnifying-glass {
+.fa-magnifying-glass {
     display: none;
 }
 
@@ -638,17 +638,12 @@
         width: 100%;
     }
 
-    .site-header--button {
+    .site-header--button span {
         display: none;
     }
 
-    .site-header--magnifying-glass {
+    .fa-magnifying-glass {
         display: inline-block;
-        width: 62px;
-        border-radius: 15px;
-        border: 1px solid #0065FC;
-        background-color: #0065FC;
-        color: #FFFFFF;
     }
 
     /* Site Header - FILTERS */
