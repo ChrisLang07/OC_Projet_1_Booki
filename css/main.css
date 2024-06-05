@@ -13,6 +13,8 @@
 .site-header--topbar {
     display: flex;
     justify-content: space-between;
+    width: 93%;
+    margin:auto;
 }
 
 /* Site Header - TOPBAR-LOGO */
@@ -20,13 +22,12 @@
 .site-header--topbar-logo {
     width: 61px;
     height: 19px;
-    padding: 30px 50px;
+    padding: 30px 0;
 }
 
 /* Site Header - TOPBAR-MENU */
 
 .site-header--topbar-menu {
-    padding: 0 50px;
     margin-top: 20px;
 }
 
@@ -59,7 +60,7 @@
 
 /* Site Header - SEARCH-HEADLINE */
 
-.site-header--search-headline {
+.site-header--headline {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -67,9 +68,10 @@
 
 /* Site Header - SEARCH-TITLE */
 
-.site-header--search-title {
+.site-header--headline-title {
     font-size: 1.3rem;
     font-weight: 700;
+    margin-bottom: 0;
 }
 
 /* Site Header - SEARCH-BAR */
@@ -619,12 +621,12 @@
         margin: auto;
     }
 
-    .site-header--search-headline {
+    .site-header--headline {
         margin: auto;
         width: 100%;
     }
 
-    .site-header--search-title {
+    .site-header--headline-title {
         margin-top: 30px;
     }
 
@@ -664,7 +666,8 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        gap: 10px;             
+        gap: 10px;  
+        width: 100%           
     }
 
     .site-header--filters-tag {
